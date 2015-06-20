@@ -25,15 +25,16 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="led_select" id="7" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="8">
-                <field name="NUM">5</field>
-              </block>
-            </value>
+          <block type="movement_right" id="60">
             <next>
-              <block type="movement_right" id="30"></block>
+              <block type="led_select" id="7" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="8">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
+              </block>
             </next>
           </block>
         </statement>
