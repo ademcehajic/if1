@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="456" y="162">
+  <block type="controls_whileUntil" id="1" inline="false" x="226" y="121">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -19,37 +19,13 @@
             </value>
             <value name="B">
               <block type="math_number" id="6">
-                <field name="NUM">75</field>
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_stutter" id="70">
-            <next>
-              <block type="robot_delay" id="71" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="72">
-                    <field name="NUM">150</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_right" id="60">
-                    <next>
-                      <block type="led_select" id="7" inline="true">
-                        <field name="ACTION">FLASH</field>
-                        <value name="LED">
-                          <block type="math_number" id="8">
-                            <field name="NUM">5</field>
-                          </block>
-                        </value>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_left" id="96"></block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="40"></block>
@@ -58,7 +34,7 @@
           <block type="robot_delay" id="9" inline="true">
             <value name="DELAY">
               <block type="math_number" id="10">
-                <field name="NUM">150</field>
+                <field name="NUM">200</field>
               </block>
             </value>
           </block>
