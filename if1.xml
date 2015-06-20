@@ -86,7 +86,7 @@
                   <block type="robot_delay" id="140" inline="true">
                     <value name="DELAY">
                       <block type="math_number" id="141">
-                        <field name="NUM">400</field>
+                        <field name="NUM">2000</field>
                       </block>
                     </value>
                     <next>
@@ -95,9 +95,19 @@
                           <block type="robot_delay" id="152" inline="true">
                             <value name="DELAY">
                               <block type="math_number" id="153">
-                                <field name="NUM">600</field>
+                                <field name="NUM">1400</field>
                               </block>
                             </value>
+                            <next>
+                              <block type="variables_set" id="155" inline="true">
+                                <field name="VAR">turns</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="159">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
